@@ -1,11 +1,11 @@
 package cn.com.xuxiaowei.scheduler;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 /**
  * 定时器 测试类
@@ -16,8 +16,8 @@ import org.springframework.stereotype.Component;
  * @since 0.0.1
  */
 @Slf4j
-@Component
 @EnableAsync
+@Configuration
 @EnableScheduling
 public class SchedulerTest {
 
